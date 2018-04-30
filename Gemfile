@@ -29,18 +29,15 @@ gem 'devise'
 gem 'toastr-rails'
 
 gem 'omniauth-facebook'
+gem 'thin'
 gem "paperclip", "~> 6.0.0"
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.0.0"
 
 
 group :production do
-  gem 'pg'
+  gem 'pg', '0.20.0'
   gem 'rails_12factor'
-end
-
-group :development, :test do
-  gem 'sqlite3'
 end
 
 # Use ActiveModel has_secure_password
@@ -55,6 +52,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
