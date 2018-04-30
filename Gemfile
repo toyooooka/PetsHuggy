@@ -33,6 +33,7 @@ gem "paperclip", "~> 6.0.0"
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.0.0"
 
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
