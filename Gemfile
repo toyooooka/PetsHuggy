@@ -36,6 +36,7 @@ gem "figaro", "~> 1.0.0"
 gem 'aws-sdk-s3', '~> 1'
 gem 'geocoder'
 gem 'jquery-ui-rails'
+gem 'stripe'
 
 
 group :production do
