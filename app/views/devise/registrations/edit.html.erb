@@ -2,8 +2,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3 row-space-4">
-    <!-- 自分のプロフィールへのリンク -->
-    <%= link_to "自分のプロフィールを確認する", user_path(current_user), class: "btn btn-default btn-full" %>
+      <!-- 自分のプロフィールへのリンク -->
+      <%= link_to "自分のプロフィールを確認する", user_path(current_user), class: "btn btn-default btn-full" %>
     </div>
 
     <div class="col-md-9">
@@ -27,6 +27,10 @@
 
             <div class="form-group">
               <%= f.text_area :description, rows: 5, cols: 25,  :placeholder => "自己紹介文", :class => 'form-control' %>
+            </div>
+
+            <div class="form-group">
+              <%= f.file_field :image, :class => 'form-control' %>
             </div>
 
             <div class="form-group">

@@ -33,7 +33,9 @@ gem 'thin'
 gem "paperclip", "~> 6.0.0"
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.0.0"
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk-s3', '~> 1'
+gem 'geocoder'
+gem 'jquery-ui-rails'
 
 
 group :production do
